@@ -1,0 +1,409 @@
+/* CSS untuk styling */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.fas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fas ul li {
+    margin: 0 10px;
+}
+
+.fas {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fas-button:hover {
+    background-color: #b60000;
+    transform: translateY(-2px);
+}
+
+main {
+    padding: 80px 20px 20px; /* Adjust padding to account for fixed header */
+    height: calc(100vh - 60px); /* Full height minus header */
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.hero {
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.products-section {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.products {
+    display: flex;
+    flex-direction: column; /* Stack products vertically */
+    align-items: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Set a maximum width */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item h3 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#fps-display {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    z-index: 1000;
+}
+
+audio {
+    display: none;
+}
+
+/* Gaya untuk modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #1e1e1f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* kontak */
+/* CSS untuk styling halaman Kontak */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #161616;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px ;
+    margin: 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin:  15px;
+}
+
+.fas-button {
+    display: inline-block;
+    background-color: #140f0f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fas-button:hover {
+    background-color: #525252;
+    transform: translateY(-2px);
+}
+
+main {
+    padding: 190px 20px 20px; /* Adjust padding to account for fixed header */
+    height: calc(100vh - 60px); /* Full height minus header */
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.contact-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    color: #ffffff;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #313131;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #303030;
+}
+/* Animasi RGB Border */
+@keyframes border-rainbow {
+    0% {
+    border-color: red;
+    }
+    25% {
+    border-color: yellow;
+    }
+    50% {
+    border-color: green;
+    }
+    75% {
+    border-color: blue;
+    }
+    100% {
+    border-color: red;
+    }
+}
+
+.rgb-border {
+    border: 4px solid; /* Lebar dan jenis border */
+    border-image-slice: 1;
+    border-width: 5px; /* Ubah ukuran border jika diperlukan */
+    animation: border-rainbow 3s infinite linear; /* Durasi animasi */
+}
+
+#device-info {
+    position: absolute; /* Mengatur posisi absolut */
+    top: 10px; /* Jarak dari atas */
+    left: 10px; /* Jarak dari kiri */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang transparan */
+    padding: 10px; /* Ruang di dalam elemen */
+    border-radius: 5px; /* Sudut membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan */
+    font-family: Arial, sans-serif; /* Mengatur font */
+    z-index: 1000; /* Memastikan elemen di atas elemen lain */
+}
+
+#device-icon {
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+    font-size: 20px; /* Ukuran ikon */
+    vertical-align: middle; /* Penyesuaian vertikal ikon */
+}
+
+/*teks gerak/MENGETIK*/
+body {
+    background-color: #1d1d1d;
+    font-family: Arial, sans-serif;
+}
+
+.marquee {
+    white-space: nowrap; /* Mencegah teks membungkus */
+    overflow: hidden; /* Menyembunyikan bagian teks yang keluar */
+    display: inline-block; /* Membuat elemen inline-block */
+    padding-left: 100%; /* Jarak awal dari kiri */
+    animation: marquee 7s linear infinite; /* Animasi */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Bergerak hingga keluar layar */
+}
+
+#loader {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    animation: fade 1s infinite; /* Animasi fade */
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
